@@ -2,7 +2,9 @@
   <div class="container">
     <div>
     <input type="search" class="searchInput" placeholder="Search for Tutorials..." v-model="searchVideos"/>
+
     </div>
+    
     <center>
     <div class="videosYoutube">
    
@@ -24,6 +26,7 @@ export default {
     return{
       image1,
       searchVideos:'',
+     
       videos:[
         {
           id:1,

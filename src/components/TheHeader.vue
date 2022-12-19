@@ -42,7 +42,7 @@ import medium from '../assets/medium.png';
 export default {
     data(){
         return{
-            navItems:['Home','Books', 'Leetcode','About' ],
+            navItems:['Home','Books', 'Leetcode','About','News'],
             socialIcons:[facebook,linkedin,twitter,youtube, medium],
             listIcon,
             sizeNav:false
