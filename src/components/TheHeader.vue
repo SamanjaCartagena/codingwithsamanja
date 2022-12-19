@@ -35,14 +35,15 @@
 <script>
 import facebook from '../assets/facebook.png';
 import instagram from '../assets/instagram.png';
-import tiktok from '../assets/tiktok.png';
+import twitter from '../assets/twitter.png';
 import youtube from '../assets/youtube.png';
 import listIcon from '../assets/listIcon.png';
+import medium from '../assets/medium.png';
 export default {
     data(){
         return{
             navItems:['Home','About','Courses','Books','Frontend','Backend' ],
-            socialIcons:[facebook,instagram,tiktok,youtube],
+            socialIcons:[facebook,instagram,twitter,youtube, medium],
             listIcon,
             sizeNav:false
         }
