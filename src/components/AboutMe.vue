@@ -1,6 +1,13 @@
 <template>
-  <div>
+  <div class="container">
+ <div class="pic">
 
+
+ </div>
+  <div class="about">
+
+
+  </div>
   </div>
 </template>
 
@@ -10,6 +17,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.container{
+    display: flex;
+   width:100%;
+   background-color: red;
+}
 
 </style>

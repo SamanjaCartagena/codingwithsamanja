@@ -42,7 +42,7 @@ import medium from '../assets/medium.png';
 export default {
     data(){
         return{
-            navItems:['Home','About','Courses','Books','Frontend','Backend' ],
+            navItems:['Home','Courses','Books','Frontend','Backend', 'Leetcode','About me' ],
             socialIcons:[facebook,instagram,twitter,youtube, medium],
             listIcon,
             sizeNav:false
@@ -53,26 +53,30 @@ export default {
         this.sizeNav = !this.sizeNav;
       },
       socialClicked(v){
-       if(v.includes(tiktok)){
-         var anchor1 = document.createElement('a');
-        anchor1.href = 'https://www.tiktok.com/@novathewonderdog';
-        anchor1.target="_blank";
-        anchor1.click();
-       }
-       else if(v.includes(youtube)){
+      if(v.includes(youtube)){
         var anchor = document.createElement('a');
-        anchor.href = 'https://www.youtube.com/@novathewonderdog9404';
+        anchor.href = 'https://www.youtube.com/channel/UCUe9B_qnHgGzWUTSrE_7AtQ';
         anchor.target="_blank";
         anchor.click();
        }
-       else if(v.includes(instagram)){
-        
+       else if(v.includes(twitter)){
+        console.log(v);
+           var anchor3 = document.createElement('a');
+        anchor3.href = 'https://twitter.com/Samanja09';
+        anchor3.target="_blank";
+        anchor3.click();
        }
        else if(v.includes(facebook)){
          var anchor2 = document.createElement('a');
-        anchor2.href = 'https://www.facebook.com/groups/409712361276865';
+        anchor2.href = 'https://www.facebook.com/Coding-with-Samanja-100645242542738';
         anchor2.target="_blank";
         anchor2.click();
+       }
+       else if(v.includes(medium)){
+            var anchor7 = document.createElement('a');
+        anchor7.href = 'https://medium.com/@samchowdhury';
+        anchor7.target="_blank";
+        anchor7.click();
        }
       },
       navClicked(v){

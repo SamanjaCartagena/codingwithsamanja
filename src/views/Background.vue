@@ -27,8 +27,9 @@ export default {
       videos:[
         {
           id:1,
-          title:'Recursion in Java',
-          video:'https://www.youtube.com/embed/JFvUWv7C5o8'
+          title:'Date range picker Using Element Plus UI and Vue JS',
+           video:'https://www.youtube.com/embed/Y_viVcX4Hok'
+          
         },
         {
           id:2,
@@ -91,8 +92,8 @@ export default {
         },
          {
            id:13,
-           title:'Date range picker Using Element Plus UI and Vue JS',
-           video:'https://www.youtube.com/embed/Y_viVcX4Hok'
+           title:'Recursion in Java',
+          video:'https://www.youtube.com/embed/JFvUWv7C5o8'
         },
         {
           id:14,
@@ -150,10 +151,20 @@ body{
     left:18%;
      }
 
-
+      @media only screen and (max-width:1000px) {
+.videosYoutube{
+  position: relative;
+  top:200px;
+  display: grid;
+  margin:10px;
+  grid-template-columns: auto auto;
+}
+    
+  }
    @media only screen and (max-width:900px) {
 .videosYoutube{
   position: relative;
+   top:150px;
   display: grid;
   margin:10px;
   grid-template-columns: auto auto;
@@ -163,6 +174,7 @@ body{
      @media only screen and (max-width:800px) {
 .videosYoutube{
   position: relative;
+  top:150px;
   display: grid;
   margin:10px;
   grid-template-columns: auto auto;
@@ -172,19 +184,31 @@ body{
    @media only screen and (max-width:700px) {
 .videosYoutube{
   position: relative;
+  top:150px;
   display: grid;
-  grid-template-columns: auto auto;
+  margin:10px;
+  grid-template-columns: auto;
 }
     
   }
       @media only screen and (max-width:600px) {
 .videosYoutube{
   position: relative;
-  top:400px;
   display: grid;
+  top:150px;
   margin:10px;
   grid-template-columns: auto ;
 }
-    
+    .searchInput{
+  width:60%;
+   height:40px; 
+   position: relative;
+    top:100px; 
+    left:18%;
+     }
   }
+iframe{
+  height:250px;
+  width:300px;
+}
 </style>

@@ -1,12 +1,10 @@
 <script setup>
-import TheHeader from './components/TheHeader.vue'
-import Background from './views/Background.vue'
+
 </script>
 
 <template>
   <div>
-    <the-header></the-header>
-    <background></background>
+   <router-view/>
   </div>
 </template>
 
