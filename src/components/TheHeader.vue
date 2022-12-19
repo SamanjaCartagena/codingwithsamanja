@@ -34,7 +34,7 @@
 
 <script>
 import facebook from '../assets/facebook.png';
-import instagram from '../assets/instagram.png';
+import linkedin from '../assets/linkedin.png';
 import twitter from '../assets/twitter.png';
 import youtube from '../assets/youtube.png';
 import listIcon from '../assets/listIcon.png';
@@ -42,8 +42,8 @@ import medium from '../assets/medium.png';
 export default {
     data(){
         return{
-            navItems:['Home','Courses','Books','Frontend','Backend', 'Leetcode','About me' ],
-            socialIcons:[facebook,instagram,twitter,youtube, medium],
+            navItems:['Home','Books', 'Leetcode','About' ],
+            socialIcons:[facebook,linkedin,twitter,youtube, medium],
             listIcon,
             sizeNav:false
         }
@@ -51,6 +51,11 @@ export default {
     methods:{
       showNav(){
         this.sizeNav = !this.sizeNav;
+      },
+      navClicked(v){
+        var a=v.split(' ').join().toLowerCase();
+        console.log(a)
+         this.$router.push({path:`/${a}`})
       },
       socialClicked(v){
       if(v.includes(youtube)){
@@ -78,10 +83,14 @@ export default {
         anchor7.target="_blank";
         anchor7.click();
        }
+       else if(v.includes(linkedin)){
+         var anchor8 = document.createElement('a');
+        anchor8.href = 'https://www.linkedin.com/in/samanja-cartagena-80aa8920a/';
+        anchor8.target="_blank";
+        anchor8.click();
+       }
       },
-      navClicked(v){
-        console.log(v+" was clicked")
-      }
+
     }
 }
 </script>
