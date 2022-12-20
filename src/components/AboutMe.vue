@@ -8,9 +8,11 @@
   <div class="about">
   <center>
     <p class="introduction">
-    I am a New York based Software Engineer with 10+ years of experience. Follow me on Linkedin, Twitter, Facebook and YouTube for daily coding tips.
-    I have worked in millions of projects. Ok not exactly a million. I am exaggerating a little bit. But I have been free lancing for what seems like forever. Please check out some of my projects. 
-    Follow me on Twitter for regular coding tips and advice.  
+        There is a saying that "Actions speak louder than words", yes I believe in that saying. But just taking actions can also be useless if the results do not say anything.Results speak louder than actions. And lastly, effect speaks louder than results. 
+        Become an effective coder by learning everything the right way. 
+    I am a New York based Software Engineer with 10+ years of experience. Follow me on Linkedin, Twitter, Facebook and YouTube for daily coding tips. Will building a twitter
+    clone, facebook clone or netflix clone help you break into tech? Will a super fancy portfolio with crazy animations help you break into tech. No, it wont. Only practicing codes with the right mindset would help you become a software engineer. Practice coding with me and unleash your passion first. 
+    Only than you will become a super coder.  Join my discord chat group. 
   </p>
   
   </center>

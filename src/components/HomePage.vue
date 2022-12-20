@@ -1,7 +1,6 @@
 <template>
   <div>
    <background></background>
-   
   </div>
 </template>
 
@@ -9,7 +8,7 @@
 import Background from '../views/Background.vue'
 export default {
   components:{
-    Background
+    Background,
   },
   data(){
     return {
