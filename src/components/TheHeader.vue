@@ -43,7 +43,7 @@ import email from '../assets/email.png';
 export default {
     data(){
         return{
-            navItems:['Home','Books', 'Leetcode','Vue JS','Angular JS','React JS','About','News'],
+            navItems:['Home','Books', 'Leetcode','Vue','Angular','React','About','News'],
             socialIcons:[facebook,linkedin,twitter,youtube, medium, email],
             listIcon,
             sizeNav:false

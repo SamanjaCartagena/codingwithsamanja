@@ -1,6 +1,7 @@
 import {createRouter, createWebHistory} from 'vue-router';
 import HomePage from '../components/HomePage.vue';
 import AboutMe from '../components/AboutMe.vue';
+import Books from '../views/Books.vue'
 const router=createRouter({
     history: createWebHistory(),
     routes:[{
@@ -13,7 +14,13 @@ const router=createRouter({
         path:'/about',
         name:'/about', 
         component:AboutMe
+    },
+      {
+        path:'/books',
+        name:'/books', 
+        component:Books
     }
+    
     
    
 ]
