@@ -1,6 +1,6 @@
 <template>
   <div>
-  <h1>Leetcode</h1>
+   <h1>PHP</h1>
   </div>
 </template>
 
