@@ -13,7 +13,7 @@
         <li v-show="sizeNav" class="secondNav" 
 
         style="text-decoration:none;"
-        
+         
          v-for="nav in navItems" @click="showNav" :key="nav">{{nav}}</li>
       </center>
 
@@ -39,14 +39,19 @@ import twitter from '../assets/twitter.png';
 import youtube from '../assets/youtube.png';
 import listIcon from '../assets/listIcon.png';
 import medium from '../assets/medium.png';
+import email from '../assets/email.png';
 export default {
     data(){
         return{
-            navItems:['Home','Books', 'Leetcode','About','News'],
-            socialIcons:[facebook,linkedin,twitter,youtube, medium],
+            navItems:['Home','Books', 'Leetcode','Vue JS','Angular JS','React JS','About','News'],
+            socialIcons:[facebook,linkedin,twitter,youtube, medium, email],
             listIcon,
             sizeNav:false
         }
+    },
+    created(){
+    
+
     },
     methods:{
       showNav(){
@@ -88,6 +93,11 @@ export default {
         anchor8.href = 'https://www.linkedin.com/in/samanja-cartagena-80aa8920a/';
         anchor8.target="_blank";
         anchor8.click();
+       }
+       else if(v.includes(email)){
+         
+    !function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }
+      (document, "script", "https://chimpstatic.com/mcjs-connected/js/users/5e8f1db9cb0af4c169bb7126a/1690cde44f508ac4feb3d0373.js");
        }
       },
 

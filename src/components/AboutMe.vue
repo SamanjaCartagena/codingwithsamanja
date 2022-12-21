@@ -8,11 +8,7 @@
   <div class="about">
   <center>
     <p class="introduction">
-        There is a saying that "Actions speak louder than words", yes I believe in that saying. But just taking actions can also be useless if the results do not say anything.Results speak louder than actions. And lastly, effect speaks louder than results. 
-        Become an effective coder by learning everything the right way. 
-    I am a New York based Software Engineer with 10+ years of experience. Follow me on Linkedin, Twitter, Facebook and YouTube for daily coding tips. Will building a twitter
-    clone, facebook clone or netflix clone help you break into tech? Will a super fancy portfolio with crazy animations help you break into tech. No, it wont. Only practicing codes with the right mindset would help you become a software engineer. Practice coding with me and unleash your passion first. 
-    Only than you will become a super coder.  Join my discord chat group. 
+       I am a senior software engineer. Check out some of my freelancing work. Join my discord chat group.  
   </p>
   
   </center>
@@ -26,7 +22,8 @@
          
             <img :src="this.image3" class="projectImages"/>
 
-   
+                         <img :src="this.image4" class="projectImages"/>
+
   
   </div>
   </div>
@@ -38,10 +35,11 @@ import samanja from '../assets/samanja.jpg'
 import image1 from '../assets/memorandum.png'
 import image2 from '../assets/salonZiba.png'
 import image3 from '../assets/mark.png'
+import image4 from '../assets/santorini.jpg'
 export default {
     data(){
         return{
-            samanja, image1, image2,image3
+            samanja, image1, image2,image3, image4
         }
     }
 
