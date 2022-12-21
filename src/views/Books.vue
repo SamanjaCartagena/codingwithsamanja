@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-   <center> <img :src="this.image1" class="book1" /> </center>
+   <center> <img :src="this.image1" class="book1" @click="published"/> </center>
     
   </div>
 </template>
@@ -13,6 +13,15 @@ export default {
         return {
             image1, image2
         }
+    },
+    methods:{
+      published(){
+         var anchor8 = document.createElement('a');
+        anchor8.href = 'https://www.amazon.com/dp/B0BLGP59B4?ref_=pe_3052080_397514860';
+        anchor8.target="_blank";
+        anchor8.click();
+        
+      }
     }
 
 }
@@ -29,5 +38,8 @@ export default {
 .book1{
  position: relative;
  top:50px;
+}
+.book1:hover{
+  cursor: pointer;
 }
 </style>
