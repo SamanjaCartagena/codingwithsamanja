@@ -28,6 +28,13 @@
 
   </div>
                          <img :src="this.listIcon"  class="listIcons" @click="showNav"/>
+                         <div class="frontend" v-if="!this.showfrontend" style="z-index:700">
+                          <ul>
+                            <li v-for="front in frontend" :key="front" style="z-index:700">
+                                 {{front}}
+                            </li>
+                          </ul>
+                         </div>
 
   </div>
 </template>
@@ -38,15 +45,16 @@ import linkedin from '../assets/linkedin.png';
 import twitter from '../assets/twitter.png';
 import youtube from '../assets/youtube.png';
 import listIcon from '../assets/listIcon.png';
-import medium from '../assets/medium.png';
-import email from '../assets/email.png';
+
 export default {
     data(){
         return{
-            navItems:['Home','Books', 'Leetcode','Vue','Angular','React','PHP','About','News',],
-            socialIcons:[facebook,linkedin,twitter,youtube, medium, email],
+            navItems:['Home','Books', 'Leetcode','Frontend','Backend','AboutMe',],
+            socialIcons:[facebook,linkedin,twitter,youtube],
+            frontend:['JavaScript','Vue Js','React Js'],
             listIcon,
-            sizeNav:false
+            sizeNav:false,
+            showfrontend:false
         }
     },
     created(){
@@ -58,7 +66,11 @@ export default {
         this.sizeNav = !this.sizeNav;
       },
       navClicked(v){
+        
         var a=v.split(' ').join().toLowerCase();
+        if(a=='frontend'){
+          
+        }
         console.log(a)
           this.sizeNav= false;
          this.$router.push({path:`/${a}`})
