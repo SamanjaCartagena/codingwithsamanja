@@ -1,19 +1,19 @@
 <template>
   <div class="container">
     <div class="threeNavs">
-      <center>
+      
       <ul>
          <li class="topnav">
-         <h4 style="z-index:600; opacity:1; position:relative; top:15px;">hi</h4>
+         <p class="topnavpara">Subscribe</p>
          </li>
 <li class="topnav">
-        <h4 style="z-index:600; opacity:1; position:relative; top:15px;">two</h4>
+        <p class="topnavpara">Donate</p>
          </li>
          <li class="topnav">
-         <h4 style="z-index:600; opacity:1; position:relative; top:15px;">three</h4>
+         <p class="topnavpara">Hire</p>
          </li>
       </ul>
-      </center>
+      
 
     </div>
     <div>
@@ -152,8 +152,29 @@ export default {
   display: inline-block;
   opacity: .5;
   z-index:500;
-  margin-right:5px;
-  
+  margin:5px;
+  position: relative;
+  left:40%;
+  animation: box 3s;
+
+}
+.topnavpara{
+  z-index:600; 
+  opacity:1;
+   position:relative;
+    top:20px;
+  font-size:15px;
+  text-align: center;
+}
+@keyframes box {
+  0%{
+    width:50px;
+    height:50px;
+  }
+  100%{
+    width:100px;
+    height: 100px;
+  }
 }
 .topnav:hover{
   background-color: white;
@@ -224,7 +245,7 @@ body{
     
     }
   }
-   @media only screen and (max-width:900px) {
+@media only screen and (max-width:900px) {
 .videosYoutube{
   position: relative;
    top:150px;
@@ -233,7 +254,31 @@ body{
   grid-template-columns: auto auto;
 }
 .titledisplay{
-  font-size: 35px;
+  font-size: 20px;
+  position: relative;
+  top:20px;
+  left:25%;
+}
+.topnav{
+  width:60px;
+  height:60px;
+  background-color:black;
+  color:white;
+  display: inline-block;
+  opacity: .5;
+  z-index:500;
+  position: relative;
+  left:14%;
+  z-index:2;
+  margin:5px;
+  animation: box 3s;
+}
+.topnavpara{
+  z-index:600; 
+  opacity:1;
+   position:relative;
+    top:10px;
+  font-size:10px;
 }
     
   }

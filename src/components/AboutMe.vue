@@ -68,7 +68,7 @@ export default {
   background-repeat: no-repeat;
   background-size:100%;
  color:white;
-
+ z-index:0;
 }
 .pic{
     width:40%;
