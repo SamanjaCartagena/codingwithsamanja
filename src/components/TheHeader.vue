@@ -14,7 +14,7 @@
 
         style="text-decoration:none;"
          
-         v-for="nav in navItems" @click="showNav" :key="nav">{{nav}}</li>
+         v-for="nav in navItems" @click="navClicked(nav)" :key="nav">{{nav}}</li>
       </center>
 
     </ul>
@@ -60,6 +60,7 @@ export default {
       navClicked(v){
         var a=v.split(' ').join().toLowerCase();
         console.log(a)
+          this.sizeNav= false;
          this.$router.push({path:`/${a}`})
       },
       socialClicked(v){
@@ -170,14 +171,7 @@ body{
     padding:0;
     margin:0;
 }
-@keyframes sizeNavAnimate {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
+
 @media only screen and (min-width:700px){
   .secondNav {
     display:none;
