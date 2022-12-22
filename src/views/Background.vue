@@ -1,12 +1,19 @@
 <template>
   <div class="container">
     <div class="threeNavs">
+      <center>
       <ul>
-         <li>
-         Hi
+         <li class="topnav">
+         <h4 style="z-index:600; opacity:1; position:relative; top:15px;">hi</h4>
          </li>
-
+<li class="topnav">
+        <h4 style="z-index:600; opacity:1; position:relative; top:15px;">two</h4>
+         </li>
+         <li class="topnav">
+         <h4 style="z-index:600; opacity:1; position:relative; top:15px;">three</h4>
+         </li>
       </ul>
+      </center>
 
     </div>
     <div>
@@ -134,10 +141,31 @@ export default {
 </script>
 
 <style scoped>
+.threeNavs  {
 
+}
+.topnav{
+  width:100px;
+  height:100px;
+  background-color:black;
+  color:white;
+  display: inline-block;
+  opacity: .5;
+  z-index:500;
+  margin-right:5px;
+  
+}
+.topnav:hover{
+  background-color: white;
+  opacity: 1;
+  color:black;
+  cursor:pointer;
+}
 .container{
   height:600px;
-  width:100%;
+  position: relative;
+  bottom:20px;
+width:100%;
   background-image: url('../assets/background.jpg');
   background-repeat: no-repeat;
   background-size:100%;
