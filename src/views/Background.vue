@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <div>
-    <input type="search" class="searchInput" placeholder="Search for Tutorials..." v-model="searchVideos"/>
+    <h3 class="titledisplay">Coding with Samanja</h3>
+    <input type="search" class="searchInput" placeholder="Search for Tutorials..."  style="text-align:center" v-model="searchVideos"/>
 
     </div>
     
@@ -135,7 +136,23 @@ export default {
   width: 100%;;
   
 }
+.titledisplay{
+  color:white;
+  position: absolute;
+  top:200px;
+  left:45%;
+  animation:  titledis 2s;
 
+}
+@keyframes titledis{
+  0%{
+    left:0%;
+  }
+  100%{
+    left:45%;
+  }
+  
+}
 body{
   padding:0;
   margin:0;
