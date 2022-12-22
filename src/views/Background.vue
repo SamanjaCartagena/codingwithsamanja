@@ -140,16 +140,19 @@ export default {
   color:white;
   position: absolute;
   top:200px;
-  left:45%;
+  left:35%;
   animation:  titledis 2s;
 
+}
+.titledisplay{
+  font-size: 45px;
 }
 @keyframes titledis{
   0%{
     left:0%;
   }
   100%{
-    left:45%;
+    left:35%;
   }
   
 }
@@ -164,11 +167,11 @@ body{
   grid-template-columns: auto auto auto auto;
 }
 .searchInput{
-  width:60%;
+  width:40%;
    height:40px; 
    position: relative;
     top:200px; 
-    left:18%;
+    left:30%;
      }
 
       @media only screen and (max-width:1000px) {
