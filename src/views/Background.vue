@@ -182,7 +182,10 @@ body{
   margin:10px;
   grid-template-columns: auto auto;
 }
+    .titledisplay{
+      font-size: 35px;
     
+    }
   }
    @media only screen and (max-width:900px) {
 .videosYoutube{
@@ -191,6 +194,9 @@ body{
   display: grid;
   margin:10px;
   grid-template-columns: auto auto;
+}
+.titledisplay{
+  font-size: 35px;
 }
     
   }
@@ -202,7 +208,9 @@ body{
   margin:10px;
   grid-template-columns: auto auto;
 }
-    
+   .titledisplay{
+    font-size: 30px;
+   } 
   }
    @media only screen and (max-width:700px) {
 .videosYoutube{
@@ -212,7 +220,9 @@ body{
   margin:10px;
   grid-template-columns: auto;
 }
-    
+.titledisplay{
+  font-size: 25px;
+}    
   }
       @media only screen and (max-width:600px) {
 .videosYoutube{
@@ -221,6 +231,9 @@ body{
   top:150px;
   margin:10px;
   grid-template-columns: auto ;
+}
+.titledisplay{
+  font-size: 20px;
 }
     .searchInput{
   width:60%;

@@ -6,11 +6,17 @@ import Leetcode from '../components/LeetCode.vue'
 import php from '../components/ThePHP.vue'
 const router=createRouter({
     history: createWebHistory(),
-    routes:[{
-        path: '/',
-        alias:'/home',
+    routes:[
+        {
+         path:'/',
+         component:HomePage
+        },
+        
+        {
+        path: '/home',
+        redirect:'/',
+    
                 
-        component:HomePage, 
     },
     {
         path:'/about',

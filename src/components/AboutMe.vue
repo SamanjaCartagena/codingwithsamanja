@@ -63,12 +63,20 @@ export default {
    width:100%;
    height:600px;
    width:100%;
+ 
+  background-image: url('../assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size:100%;
+ color:white;
+
 }
 .pic{
     width:40%;
     height:600px;
+
     position:relative;
     left:10%;
+    opacity: .5;
 }
 .projectImages{
     width:300px;
