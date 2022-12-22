@@ -75,8 +75,19 @@ export default {
     height:600px;
 
     position:relative;
-    left:10%;
-    opacity: .5;
+    left:10%;   
+    opacity: 0.5;
+    
+    animation: pic 4s;
+}
+@keyframes pic {
+0%{
+  opacity: 0;
+}
+100%{
+ opacity: .5;
+}
+    
 }
 .projectImages{
     width:300px;
