@@ -7,7 +7,7 @@
          <p class="topnavpara">Subscribe</p>
          </li>
 <li class="topnav">
-        <p class="topnavpara">Donate</p>
+        <p class="topnavpara">Patreon</p>
          </li>
          <li class="topnav">
          <p class="topnavpara">Hire</p>
