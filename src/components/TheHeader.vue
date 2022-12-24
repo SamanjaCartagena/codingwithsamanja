@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div style=" margin-left:55px;">
+
    <p class="headerName" >
      CODING WITH SAMANJA
    </p>
@@ -18,6 +19,7 @@
       </center>
 
     </ul>
+
     </div>
     
   <div id="top-socials">
@@ -28,7 +30,7 @@
 
   </div>
                          <img :src="this.listIcon"  class="listIcons" @click="showNav"/>
-                         <div class="frontend" v-if="!this.showfrontend" style="z-index:700">
+                         <div class="frontend" v-if="this.showfrontend" style="z-index:700">
                           <ul>
                             <li v-for="front in frontend" :key="front" style="z-index:700">
                                  {{front}}
@@ -45,6 +47,8 @@ import linkedin from '../assets/linkedin.png';
 import twitter from '../assets/twitter.png';
 import youtube from '../assets/youtube.png';
 import listIcon from '../assets/listIcon.png';
+import bracket1 from '../assets/bracket1.jpg';
+import bracket2 from '../assets/bracket2.jpg';
 
 export default {
     data(){
@@ -54,7 +58,9 @@ export default {
             frontend:['JavaScript','Vue Js','React Js'],
             listIcon,
             sizeNav:false,
-            showfrontend:false
+            showfrontend:false,
+            bracket1,
+            bracket2
         }
     },
     created(){
