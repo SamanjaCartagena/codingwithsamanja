@@ -1,21 +1,6 @@
 <template>
   <div class="container">
-    <div class="threeNavs">
-      
-      <ul>
-         <li class="topnav">
-         <p class="topnavpara">Subscribe</p>
-         </li>
-<li class="topnav">
-        <p class="topnavpara">Patreon</p>
-         </li>
-         <li class="topnav">
-         <p class="topnavpara">Hire</p>
-         </li>
-      </ul>
-      
-
-    </div>
+     <three-navs></three-navs>
     <div>
     <h3 class="titledisplay">Coding with Samanja</h3>
     <input type="search" class="searchInput" placeholder="Search for Tutorials..."  style="text-align:center" v-model="searchVideos"/>
@@ -38,7 +23,11 @@
 
 <script>
 import image1 from '../assets/background.jpg';
+import threeNavs from '../components/ThreeNavs.vue'
 export default {
+  components:{
+    threeNavs
+  },
   data(){
     return{
       image1,
@@ -141,47 +130,8 @@ export default {
 </script>
 
 <style scoped>
-.threeNavs  {
 
-}
-.topnav{
-  width:100px;
-  height:100px;
-  background-color:black;
-  color:white;
-  display: inline-block;
-  opacity: .5;
-  z-index:500;
-  margin:5px;
-  position: relative;
-  left:40%;
-  animation: box 3s;
 
-}
-.topnavpara{
-  z-index:600; 
-  opacity:1;
-   position:relative;
-    top:20px;
-  font-size:15px;
-  text-align: center;
-}
-@keyframes box {
-  0%{
-    width:50px;
-    height:50px;
-  }
-  100%{
-    width:100px;
-    height: 100px;
-  }
-}
-.topnav:hover{
-  background-color: white;
-  opacity: 1;
-  color:black;
-  cursor:pointer;
-}
 .container{
   height:600px;
   position: relative;
@@ -259,27 +209,8 @@ body{
   top:20px;
   left:25%;
 }
-.topnav{
-  width:60px;
-  height:60px;
-  background-color:black;
-  color:white;
-  display: inline-block;
-  opacity: .5;
-  z-index:500;
-  position: relative;
-  left:14%;
-  z-index:2;
-  margin:5px;
-  animation: box 3s;
-}
-.topnavpara{
-  z-index:600; 
-  opacity:1;
-   position:relative;
-    top:10px;
-  font-size:10px;
-}
+
+
     
   }
      @media only screen and (max-width:800px) {

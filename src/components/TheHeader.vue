@@ -101,23 +101,15 @@ export default {
         anchor2.target="_blank";
         anchor2.click();
        }
-       else if(v.includes(medium)){
-            var anchor7 = document.createElement('a');
-        anchor7.href = 'https://medium.com/@samchowdhury';
-        anchor7.target="_blank";
-        anchor7.click();
-       }
+      
        else if(v.includes(linkedin)){
+        console.log(v)
          var anchor8 = document.createElement('a');
         anchor8.href = 'https://www.linkedin.com/in/samanja-cartagena-80aa8920a/';
         anchor8.target="_blank";
         anchor8.click();
        }
-       else if(v.includes(email)){
-         
-    !function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }
-      (document, "script", "https://chimpstatic.com/mcjs-connected/js/users/5e8f1db9cb0af4c169bb7126a/1690cde44f508ac4feb3d0373.js");
-       }
+
       },
 
     }
