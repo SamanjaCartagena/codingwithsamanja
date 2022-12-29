@@ -30,16 +30,16 @@
 
   </div>
                          <img :src="this.listIcon"  class="listIcons" @click="showNav"/>
-                         <div class="frontend" v-if="this.showfrontend"  style="z-index:700">
+                         <div class="frontend" v-if="this.showfrontend"  v-click-outside style="z-index:700">
                           <ul>
-                            <li class="frontli" v-for="front in frontend" :key="front" style="z-index:700">
+                            <li class="frontli" v-for="front in frontend" @click="frontendClicked(front)" :key="front" style="z-index:700">
                                  {{front}}
                             </li>
                           </ul>
                          </div>
-                              <div class="backend" v-if="this.showbackend"  style="z-index:700">
+                              <div class="backend" v-if="this.showbackend"   style="z-index:700">
                           <ul>
-                            <li  v-for="back in backend" :key="back" style="z-index:700">
+                            <li  v-for="back in backend" :key="back" @click="backendClicked(back)" style="z-index:700">
                                  {{back}}
                             </li>
                           </ul>
@@ -79,10 +79,29 @@ export default {
       showNav(){
         this.sizeNav = !this.sizeNav;
       },
+      onClickOutside(event){
+     
+      },
        hovereffect(v){
         
           console.log(v+' was hovered')
         
+       },
+       frontendClicked(v){
+        var b= v.toLowerCase()
+        var a= b.split(' ').join('').trim()
+                 this.$router.push({path:`/${a}`})
+          this.showbackend= false;
+         this.showfrontend= false;
+
+       },
+        backendClicked(v){
+        var b= v.toLowerCase()
+        var a= b.split(' ').join('').trim()
+                 this.$router.push({path:`/${a}`})
+          this.showbackend= false;
+         this.showfrontend= false;
+
        },
       navClicked(v){
         
@@ -100,6 +119,8 @@ export default {
         console.log(a)
           this.sizeNav= false;
          this.$router.push({path:`/${a}`})
+         this.showbackend= false;
+         this.showfrontend= false;
         }
       },
       socialClicked(v){

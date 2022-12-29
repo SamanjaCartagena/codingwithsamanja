@@ -4,6 +4,7 @@ import AboutMe from '../components/AboutMe.vue';
 import Books from '../views/Books.vue'
 import Leetcode from '../components/LeetCode.vue'
 import php from '../components/ThePHP.vue'
+import javascript from '../components/JavaScript.vue'
 const router=createRouter({
     history: createWebHistory(),
     routes:[
@@ -37,6 +38,11 @@ const router=createRouter({
         path:'/php',
         name:'/php', 
         component:php
+    },
+    {
+        path:'/javascript',
+        name:'/javascript',
+        component:javascript
     }
     
     
