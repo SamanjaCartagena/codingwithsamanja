@@ -6,7 +6,7 @@
      CODING WITH SAMANJA
    </p>
     <ul style="position:relative; bottom:10px;">
-        <li class="firstNav" v-for="nav in navItems" @click="navClicked(nav)" :key="nav">{{nav}}</li>
+        <li class="firstNav" v-for="nav in navItems" @click="navClicked(nav)"  :key="nav">{{nav}}</li>
 
     </ul>
     <ul style="text-decoration:none; width: 100%; " >
@@ -15,7 +15,7 @@
 
         style="text-decoration:none;"
          
-         v-for="nav in navItems" @click="navClicked(nav)" :key="nav">{{nav}}</li>
+         v-for="nav in navItems" @click="navClicked(nav)"  :key="nav">{{nav}}</li>
       </center>
 
     </ul>
@@ -30,14 +30,20 @@
 
   </div>
                          <img :src="this.listIcon"  class="listIcons" @click="showNav"/>
-                         <div class="frontend" v-if="this.showfrontend" style="z-index:700">
+                         <div class="frontend" v-if="this.showfrontend"  style="z-index:700">
                           <ul>
-                            <li v-for="front in frontend" :key="front" style="z-index:700">
+                            <li class="frontli" v-for="front in frontend" :key="front" style="z-index:700">
                                  {{front}}
                             </li>
                           </ul>
                          </div>
-
+                              <div class="backend" v-if="this.showbackend"  style="z-index:700">
+                          <ul>
+                            <li  v-for="back in backend" :key="back" style="z-index:700">
+                                 {{back}}
+                            </li>
+                          </ul>
+                         </div>
   </div>
 </template>
 
@@ -56,9 +62,11 @@ export default {
             navItems:['Home','Books', 'Leetcode','Frontend','Backend','AboutMe',],
             socialIcons:[facebook,linkedin,twitter,youtube],
             frontend:['JavaScript','Vue Js','React Js'],
+            backend:['Java', 'Python','RubyonRails'],
             listIcon,
             sizeNav:false,
             showfrontend:false,
+            showbackend:false,
             bracket1,
             bracket2
         }
@@ -71,15 +79,26 @@ export default {
       showNav(){
         this.sizeNav = !this.sizeNav;
       },
+       hovereffect(v){
+        
+          console.log(v+' was hovered')
+        
+       },
       navClicked(v){
         
         var a=v.split(' ').join().toLowerCase();
         if(a=='frontend'){
-          
+         this.showfrontend = ! this.showfrontend
+        
         }
+        else if(a=='backend'){
+         this.showbackend = ! this.showbackend
+        }
+        else{
         console.log(a)
           this.sizeNav= false;
          this.$router.push({path:`/${a}`})
+        }
       },
       socialClicked(v){
       if(v.includes(youtube)){
@@ -130,6 +149,39 @@ export default {
   right:30px;
   display:none;
  
+}
+.frontend{
+  background-color: transparent;
+
+
+  padding: 5px;
+  width:150px;
+  height:80px;
+ position: relative;
+ left:20%;
+}
+.frontend ul{
+  text-decoration: none;
+  list-style-type: none;
+  
+}
+.frontend li{
+  border:.02px solid gray;
+  text-align: center;
+  width:150px;
+  background-color: white;
+ 
+  height:30px;
+  position: relative;
+  right:40px;
+  bottom:20px;
+  padding:10px;
+}
+.frontend li:hover{
+  background-color: black;
+  color:white;
+  cursor:pointer;
+  opacity: .5;
 }
 .secondNav{
   position:relative;
@@ -259,4 +311,38 @@ body{
     height:80px;
   }
 }
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 </style>

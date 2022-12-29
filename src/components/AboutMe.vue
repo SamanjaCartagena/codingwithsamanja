@@ -51,7 +51,7 @@ export default {
     position: relative;
     top:90px;
     height:400px;
-    width:300px;
+    width:350px;
 }
 .projects{
     display: grid;

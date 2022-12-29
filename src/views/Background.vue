@@ -148,7 +148,7 @@ width:100%;
   color:white;
   position: absolute;
   top:200px;
-  left:38%;
+  left:39%;
   animation:  titledis 2s;
 
 }
@@ -160,7 +160,7 @@ width:100%;
     left:0%;
   }
   100%{
-    left:35%;
+    left:39%;
   }
   
 }
