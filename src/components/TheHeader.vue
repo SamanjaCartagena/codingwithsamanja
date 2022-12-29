@@ -89,10 +89,12 @@ export default {
         var a=v.split(' ').join().toLowerCase();
         if(a=='frontend'){
          this.showfrontend = ! this.showfrontend
+         this.showbackend= false;
         
         }
         else if(a=='backend'){
          this.showbackend = ! this.showbackend
+         this.showfrontend= false;
         }
         else{
         console.log(a)
@@ -159,6 +161,7 @@ export default {
   height:80px;
  position: relative;
  left:20%;
+ top:1px;
 }
 .frontend ul{
   text-decoration: none;
@@ -169,8 +172,9 @@ export default {
   border:.02px solid gray;
   text-align: center;
   width:150px;
-  background-color: white;
- 
+  color:white;
+  background-color: black;
+ opacity: .5;
   height:30px;
   position: relative;
   right:40px;
@@ -178,10 +182,10 @@ export default {
   padding:10px;
 }
 .frontend li:hover{
-  background-color: black;
-  color:white;
+  background-color: white;
+  color:black;
   cursor:pointer;
-  opacity: .5;
+  opacity: 1;
 }
 .secondNav{
   position:relative;
@@ -197,6 +201,40 @@ export default {
         padding:10px;
         border:1px solid black;
         text-decoration:none;
+}
+.backend{
+  background-color: transparent;
+
+  top:1px;
+  padding: 5px;
+  width:150px;
+  height:80px;
+ position: relative;
+ left:28%;
+}
+.backend ul{
+  text-decoration: none;
+  list-style-type: none;
+  
+}
+.backend li{
+  border:.02px solid gray;
+  text-align: center;
+  width:150px;
+  color:white;
+  background-color: black;
+ opacity: .5;
+  height:30px;
+  position: relative;
+  right:40px;
+  bottom:20px;
+  padding:10px;
+}
+.backend li:hover{
+  background-color: white;
+  color:black;
+  cursor:pointer;
+  opacity: 1;
 }
 .container{
     display:grid;
