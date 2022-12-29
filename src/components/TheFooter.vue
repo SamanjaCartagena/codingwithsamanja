@@ -1,7 +1,7 @@
 <template>
 <div class="container">
 
-., .,c v 
+
 </div>
 </template>
 

@@ -2,7 +2,7 @@
      <div class="threeNavs">
       
       <ul>
-         <li class="topnav">
+         <li class="topnav" @click="subscription">
          <p class="topnavpara">Subscribe</p>
          </li>
 <li class="topnav">
@@ -19,7 +19,14 @@
 
 <script>
 export default {
-
+  methods:{
+    subscription(){
+          var anchor3 = document.createElement('a');
+        anchor3.href = 'https://www.youtube.com/@codingwithsamanja8315/playlists';
+        anchor3.target="_blank";
+        anchor3.click();
+    }
+  }
 }
 </script>
 
