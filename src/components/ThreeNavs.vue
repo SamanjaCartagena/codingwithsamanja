@@ -21,10 +21,10 @@
 export default {
   methods:{
     subscription(){
-          var anchor3 = document.createElement('a');
-        anchor3.href = 'https://www.youtube.com/@codingwithsamanja8315/playlists';
-        anchor3.target="_blank";
-        anchor3.click();
+          var an = document.createElement('a');
+        an.href = 'https://www.youtube.com/@codingwithsamanja8315/playlists';
+        an.target="_blank";
+        an.click();
     }
   }
 }
