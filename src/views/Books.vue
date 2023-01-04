@@ -70,9 +70,7 @@ export default {
   position: relative;
   bottom:20px;
 width:100%;
-  background-image: url('../assets/coding.jpg');
-  background-repeat: no-repeat;
-  background-size:100%;
+ background-color: #0a0a22;
   height:700px;
   width: 100%;;
   

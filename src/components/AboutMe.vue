@@ -64,9 +64,7 @@ export default {
    height:600px;
    width:100%;
  
-  background-image: url('../assets/background.jpg');
-  background-repeat: no-repeat;
-  background-size:100%;
+  background-color: #0a0a22;
  color:white;
  z-index:0;
 }
