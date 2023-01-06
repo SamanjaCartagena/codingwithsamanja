@@ -105,7 +105,7 @@ export default {
        },
       navClicked(v){
         
-        var a=v.split(' ').join().toLowerCase();
+        var a=v.split(' ').join('').toLowerCase();
         if(a=='frontend'){
          this.showfrontend = ! this.showfrontend
          this.showbackend= false;

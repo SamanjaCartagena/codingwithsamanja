@@ -9,6 +9,7 @@ import vuejs from '../components/VueJs.vue'
 import reactjs from '../components/ReactJs.vue'
 import googlecloud from '../components/GoogleCloud.vue'
 import java from '../components/Java.vue'
+import datastructures from '../components/DataStructures.vue'
 const router=createRouter({
     history: createWebHistory(),
     routes:[
@@ -67,6 +68,11 @@ const router=createRouter({
         path:'/java',
         name:'/java',
         component:java
+    },
+        {
+        path:'/datastructures',
+        name:'/datastructures',
+        component:datastructures
     }
     
     
