@@ -105,7 +105,7 @@ export default {
        },
       navClicked(v){
         
-        var a=v.split(' ').join('').toLowerCase();
+        var a=v.split(' ').join('').trim().toLowerCase();
         if(a=='frontend'){
          this.showfrontend = ! this.showfrontend
          this.showbackend= false;
@@ -116,7 +116,6 @@ export default {
          this.showfrontend= false;
         }
         else{
-        console.log(a)
           this.sizeNav= false;
          this.$router.push({path:`/${a}`})
          this.showbackend= false;

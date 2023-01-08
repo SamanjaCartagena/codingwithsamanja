@@ -10,6 +10,7 @@ import reactjs from '../components/ReactJs.vue'
 import googlecloud from '../components/GoogleCloud.vue'
 import java from '../components/Java.vue'
 import datastructures from '../components/DataStructures.vue'
+import rubyonrails from '../components/RubyOnRails.vue'
 const router=createRouter({
     history: createWebHistory(),
     routes:[
@@ -73,6 +74,11 @@ const router=createRouter({
         path:'/datastructures',
         name:'/datastructures',
         component:datastructures
+    },
+     {
+        path:'/rubyonrails',
+        name:'/rubyonrails',
+        component:rubyonrails
     }
     
     

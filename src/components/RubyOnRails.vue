@@ -1,8 +1,8 @@
- <template>
+<template>
   <div class="container">
      <three-navs></three-navs>
     <div>
-    <h3 class="titledisplay">Java</h3>
+    <h3 class="titledisplay">Coming Soon !</h3>
     <input type="search" class="searchInput" placeholder="Search for Tutorials..."  style="text-align:center" v-model="searchVideos"/>
 
     </div>
@@ -23,7 +23,7 @@
 
 <script>
 import image1 from '../assets/background.jpg';
-import threeNavs from './ThreeNavs.vue'
+import threeNavs from '../components/ThreeNavs.vue'
 export default {
   components:{
     threeNavs
@@ -34,56 +34,8 @@ export default {
       searchVideos:'',
      
       videos:[
-          {
-            id:1,
-            title:'Linked List in Java',
-            video:'https://www.youtube.com/embed/J7173O0VCZA'
-          },
+    
 
-      
-        {
-          id:2,
-          title:'Palindrome in Java',
-          video:'https://www.youtube.com/embed/b36aX-xoDYg'
-        },
-       
-        {
-          id:3,
-          title:'final variable, blank final variable, static final variable and static blank final variable',
-          video:'https://www.youtube.com/embed/nTTtTSkytys'
-        },
-     
-        {
-          id:4,
-          title:'Swapping two variables in Java using temp',
-          video:'https://www.youtube.com/embed/ts9MvYkVoCk'
-        }, 
-        {
-          id:5,
-          title:'Reversing an Integer in Java',
-          video:'https://www.youtube.com/embed/W7z0Yi02xpc'
-        }, 
-   
-         {
-           id:6,
-           title:'Recursion in Java',
-          video:'https://www.youtube.com/embed/JFvUWv7C5o8'
-        },
-          {
-            id:7,
-            title:'Linked List in Java',
-            video:'https://www.youtube.com/embed/66my5RCN-F0'
-          },
-          {
-            id:8, 
-            title:'For loop while loop and do while loop in Java',
-            video:'https://www.youtube.com/embed/AXgxhhrEyPI'
-          },
-          {
-            id:9,
-            title:'Swapping two variables in Java',
-            video:'https://www.youtube.com/embed/ts9MvYkVoCk'
-          }
       ]
 
     }

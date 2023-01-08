@@ -36,25 +36,31 @@ export default {
       videos:[
         {
           id:1,
-          title:'Date range picker Using Element Plus UI and Vue JS',
-           video:'https://www.youtube.com/embed/Y_viVcX4Hok'
+          title:'Leetcode No.9 Palindrome Number',
+           video:'https://www.youtube.com/embed/CEwO4zHRl_E'
           
         },
         {
           id:2,
-          title:'Palindrome in Java',
-          video:'https://www.youtube.com/embed/b36aX-xoDYg'
+          title:'Leetcode No.1 Two Sum',
+          video:'https://www.youtube.com/embed/GefaCDMUpp4'
         },
-           {
+        {
           id:3,
-          title:'Palindrome in Java',
-          video:'https://www.youtube.com/embed/J7173O0VCZA'
+          title:'Leetcode No.20 Valid Parentheses',
+          video:'https://www.youtube.com/embed/UYHwBA7HcNE'
         },
-       
-
+         {
+          id:4,
+          title:'Leetcode No.7 Reverse Integer ',
+          video:'https://www.youtube.com/embed/3d5KYHW0l2E'
+        },
+ 
       ]
 
     }
+
+    
   }, computed:{
     search(){
       return this.searchVideos.toLowerCase()

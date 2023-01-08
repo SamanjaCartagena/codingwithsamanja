@@ -1,5 +1,13 @@
 <template>
 <div class="container">
+    <ul >
+        <li>
+          
+         <h3>cart.samanja09@gmail.com</h3>
+        </li>
+
+
+    </ul>
 
 
 </div>
@@ -14,9 +22,23 @@ export default {
 <style scoped>
 .container{
     width:100%;
-    height:300px;
+    height:250px;
     background-color: black;
     position: relative;
-    top:800px;
+    top:900px;
+    color:white;
+}
+li{
+    text-decoration: none;
+}
+ul{
+    text-decoration: none;
+}
+ul li {
+    text-decoration: none;
+    text-align: center;
+   list-style: none;
+   position: relative;
+   top:40px;
 }
 </style>
