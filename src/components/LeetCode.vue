@@ -2,15 +2,17 @@
   <div class="container">
     <three-navs></three-navs>
     <div>
-    <h3 class="titledisplay">Leetcode Problems</h3>
+    <h3 class="titledisplay">{...Leetcode Problems}</h3>
     <input type="search" class="searchInput" placeholder="Search for leetcode Tutorials..."  style="text-align:center" v-model="searchVideos"/>
 
     </div>
     
     <center>
     <div class="videosYoutube">
-   
-      <div v-for="video in filteredVideos" :key="video" >
+
+      <div v-for="video in filteredVideos" :key="video" class="vids">
+                <h3>{{video.title}}</h3>
+
 <iframe width="400" height="300" :src="video.video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       </div>
@@ -82,10 +84,14 @@ export default {
   position: relative;
   bottom:20px;
 width:100%;
-  background-color: #0a0a22;
+  background-color:#0a0a22;
   height:700px;
   width: 100%;;
   
+}
+.vids{
+  background-color: white;
+  border:1px solid #0a0a22;
 }
 .titledisplay{
   color:white;

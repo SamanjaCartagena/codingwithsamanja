@@ -60,10 +60,14 @@ export default {
   position: relative;
   bottom:20px;
 width:100%;
-  background-color: #0a0a22;
+  background-color: #01afd1;
   height:700px;
   width: 100%;;
   
+}
+.vids{
+  background-color: white;
+  border:1px solid #0a0a22;
 }
 .titledisplay{
   color:white;

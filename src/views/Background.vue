@@ -24,6 +24,7 @@
 <script>
 import image1 from '../assets/background.jpg';
 import threeNavs from '../components/ThreeNavs.vue'
+import logo from '../assets/logo.jpg'
 export default {
   components:{
     threeNavs
@@ -32,6 +33,7 @@ export default {
     return{
       image1,
       searchVideos:'',
+      logo,
      
       videos:[
         {
@@ -137,7 +139,8 @@ export default {
   position: relative;
   bottom:20px;
 width:100%;
- background-color: #0a0a22;
+
+background-color: #0a0a22;
   height:700px;
   width: 100%;;
   

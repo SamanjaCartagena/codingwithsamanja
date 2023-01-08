@@ -2,7 +2,7 @@
   <div class="container">
      <three-navs></three-navs>
     <div>
-    <h3 class="titledisplay">Coming Soon !</h3>
+    <h3 class="titledisplay">{...Google Cloud}</h3>
     <input type="search" class="searchInput" placeholder="Search for Tutorials..."  style="text-align:center" v-model="searchVideos"/>
 
     </div>
@@ -63,6 +63,10 @@ width:100%;
   height:700px;
   width: 100%;;
   
+}
+.vids{
+  background-color: white;
+  border:1px solid #0a0a22;
 }
 .titledisplay{
   color:white;

@@ -2,7 +2,7 @@
   <div class="container">
      <three-navs></three-navs>
     <div>
-    <h3 class="titledisplay">JavaScript</h3>
+    <h3 class="titledisplay">{...JavaScript}</h3>
     <input type="search" class="searchInput" placeholder="Search for Tutorials..."  style="text-align:center" v-model="searchVideos"/>
 
     </div>
@@ -10,7 +10,8 @@
     <center>
     <div class="videosYoutube">
    
-      <div v-for="video in filteredVideos" :key="video" >
+      <div v-for="video in filteredVideos" :key="video" class="vids">
+        <h4>{{video.title}}</h4>
 <iframe width="400" height="300" :src="video.video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       </div>
@@ -87,6 +88,11 @@ width:100%;
   height:700px;
   width: 100%;;
   
+}
+.vids{
+  background-color: white;
+  border:1px solid #0a0a22;
+  color:#0a0a22;
 }
 .titledisplay{
   color:white;

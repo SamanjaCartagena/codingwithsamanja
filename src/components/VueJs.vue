@@ -2,7 +2,7 @@
   <div class="container">
      <three-navs></three-navs>
     <div>
-    <h3 class="titledisplay">Vue JS</h3>
+    <h3 class="titledisplay">{...Vue JS}</h3>
     <input type="search" class="searchInput" placeholder="Search for Tutorials..."  style="text-align:center" v-model="searchVideos"/>
 
     </div>
@@ -10,7 +10,9 @@
     <center>
     <div class="videosYoutube">
    
-      <div v-for="video in filteredVideos" :key="video" >
+      <div v-for="video in filteredVideos" :key="video" class="vids">
+        <h3>{{video.title}}</h3>
+       
 <iframe width="400" height="300" :src="video.video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       </div>
@@ -65,6 +67,15 @@ export default {
             id:5,
             title:'Date Picker Using Element Plus and Vue JS',
             video:'https://www.youtube.com/embed/yM6Y1_XxOkQ'
+        },
+        {
+          id:6, 
+          title:'Conditional Rendering of Classes in Vue JS',
+          video: 'https://www.youtube.com/embed/HFc-EMoTiQo'
+        },{
+          id:7,
+          title:'Navbar with Vue JS',
+          video:'https://www.youtube.com/embed/1XNzJjUqiBo'
         }
 
       ]
@@ -94,6 +105,10 @@ width:100%;
   height:700px;
   width: 100%;;
   
+}
+.vids{
+  background-color: white;
+  border:1px solid #0a0a22;
 }
 .titledisplay{
   color:white;

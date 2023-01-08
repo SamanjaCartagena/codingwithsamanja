@@ -37,7 +37,7 @@ export default {
 .topnav{
   width:100px;
   height:100px;
-  background-color:#005fb6;
+  background-color:black;
   color:white;
   display: inline-block;
   opacity: .5;

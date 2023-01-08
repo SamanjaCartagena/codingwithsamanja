@@ -65,6 +65,7 @@ export default {
 .books:hover{
   cursor:pointer;
 }
+
 .container{
   height:600px;
   position: relative;
