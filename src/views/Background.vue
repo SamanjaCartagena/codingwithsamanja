@@ -10,7 +10,8 @@
     <center>
     <div class="videosYoutube">
    
-      <div v-for="video in filteredVideos" :key="video" >
+      <div v-for="video in filteredVideos" :key="video" class="vids">
+       <h4> {{video.title}}</h4>
 <iframe width="400" height="300" :src="video.video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       </div>
