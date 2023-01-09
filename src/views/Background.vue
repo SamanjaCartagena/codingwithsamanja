@@ -53,11 +53,7 @@ export default {
           title:'Palindrome in Java',
           video:'https://www.youtube.com/embed/J7173O0VCZA'
         },
-        {
-          id:4,
-          title:'final variable, blank final variable, static final variable and static blank final variable',
-          video:'https://www.youtube.com/embed/nTTtTSkytys'
-        },
+      
          {
           id:4,
           title:'static final variable and static blank final variable',
