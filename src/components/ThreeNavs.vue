@@ -81,7 +81,7 @@ width:100%;
   background-repeat: no-repeat;
   background-size:100%;
   height:700px;
-  width: 100%;;
+  width: 100%;
   
 }
 
@@ -116,6 +116,16 @@ body{
    position:relative;
     top:10px;
   font-size:10px;
+}
+@keyframes box {
+  0%{
+    width:30px;
+    height:30px;
+  }
+  100%{
+    width:60px;
+    height: 60px;
+  }
 }
     
   }
