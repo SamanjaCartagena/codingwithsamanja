@@ -2,7 +2,7 @@
   <div class="container">
      <three-navs></three-navs>
     <div>
-    <h3 class="titledisplay"> Coding with Samanja </h3>
+    <h3 class="titledisplay">{...Coding with Samanja }</h3>
     <input type="search" class="searchInput" placeholder="Search for Tutorials..."  style="text-align:center" v-model="searchVideos"/>
 
     </div>
@@ -50,7 +50,7 @@ export default {
         },
            {
           id:3,
-          title:'Palindrome in Java',
+          title:'Linked List in Java',
           video:'https://www.youtube.com/embed/J7173O0VCZA'
         },
       
@@ -138,7 +138,7 @@ background-color: #0a0a22;
   color:white;
   position: absolute;
   top:200px;
-  left:39%;
+  left:36%;
   animation:  titledis 2s;
 
 }
@@ -150,7 +150,7 @@ background-color: #0a0a22;
     left:0%;
   }
   100%{
-    left:39%;
+    left:36%;
   }
   
 }
