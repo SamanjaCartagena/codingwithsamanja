@@ -2,15 +2,15 @@
   <div class="container">
      <three-navs></three-navs>
     <div>
-    <h3 class="titledisplay">Coming Soon !</h3>
+    <h3 class="titledisplay"> Coming Soon ! </h3>
     <input type="search" class="searchInput" placeholder="Search for Tutorials..."  style="text-align:center" v-model="searchVideos"/>
 
     </div>
     
     <center>
-    <div class="videosYoutube">
+    <div class="videosYoutube" >
    
-      <div v-for="video in filteredVideos" :key="video" class="vids">
+      <div v-for="video in filteredVideos" :key="video" class="vids" >
 <iframe width="400" height="300" :src="video.video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       </div>
@@ -34,8 +34,7 @@ export default {
       searchVideos:'',
      
       videos:[
-    
-
+      
       ]
 
     }
@@ -59,22 +58,16 @@ export default {
   position: relative;
   bottom:20px;
 width:100%;
-background-image: url('../assets/back.jpg');
-background-size: 100%;
-background-repeat: no-repeat;
+ background-color: #0a0a22;
   height:700px;
   width: 100%;;
   
-}
-.vids{
-  background-color: white;
-  border:1px solid #0a0a22;
 }
 .titledisplay{
   color:white;
   position: absolute;
   top:200px;
-  left:45%;
+  left:42%;
   animation:  titledis 2s;
 
 }
@@ -86,7 +79,7 @@ background-repeat: no-repeat;
     left:0%;
   }
   100%{
-    left:45%;
+    left:42%;
   }
   
 }

@@ -2,7 +2,7 @@
   <div class="container">
     <three-navs></three-navs>
     <div>
-    <h3 class="titledisplay">{...Leetcode Problems}</h3>
+    <h3 class="titledisplay">Leetcode Problems {...}</h3>
     <input type="search" class="searchInput" placeholder="Search for leetcode Tutorials..."  style="text-align:center" v-model="searchVideos"/>
 
     </div>

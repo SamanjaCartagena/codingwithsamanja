@@ -23,7 +23,7 @@ export default {
 .container{
     width:100%;
     height:250px;
-    background-color: black;
+    background-color: #0a0a22;
     position: relative;
     top:900px;
     color:white;
