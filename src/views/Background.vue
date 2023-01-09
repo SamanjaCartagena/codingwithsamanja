@@ -60,7 +60,7 @@ export default {
         },
          {
           id:4,
-          title:'final variable, blank final variable, static final variable and static blank final variable',
+          title:'static final variable and static blank final variable',
           video:'https://www.youtube.com/embed/nTTtTSkytys'
         },
         {
