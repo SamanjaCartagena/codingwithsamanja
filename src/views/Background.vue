@@ -133,9 +133,7 @@ export default {
   bottom:20px;
 width:100%;
 
-background-image: url('../assets/back.jpg');
-background-size: 100%;
-background-repeat: no-repeat;
+background-color: #0a0a22;
   height:700px;
   width: 100%;;
   

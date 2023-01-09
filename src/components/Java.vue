@@ -120,7 +120,7 @@ width:100%;
   color:white;
   position: absolute;
   top:200px;
-  left:43%;
+  left:45%;
   animation:  titledis 2s;
 
 }

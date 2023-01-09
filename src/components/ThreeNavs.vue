@@ -44,7 +44,7 @@ export default {
   z-index:500;
   margin:5px;
   position: relative;
-  left:40%;
+  left:39%;
   animation: box 3s;
 
 }
