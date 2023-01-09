@@ -105,7 +105,7 @@ body{
   opacity: .5;
   z-index:500;
   position: relative;
-  left:14%;
+  left:12%;
   z-index:2;
   margin:5px;
   animation: box 3s;

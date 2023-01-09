@@ -41,4 +41,21 @@ ul li {
    position: relative;
    top:40px;
 }
+
+@media only screen and (max-width:900px) {
+ .container{
+    position: relative;
+    top:2000px;
+    z-index:600;
+    font-size: 15px;
+ }
+ ul li {
+    text-decoration: none;
+    position: relative;
+    right:5%;
+   list-style: none;
+   position: relative;
+   top:40px;
+}
+}
 </style>

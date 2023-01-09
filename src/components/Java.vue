@@ -120,7 +120,7 @@ width:100%;
   color:white;
   position: absolute;
   top:200px;
-  left:45%;
+  left:43%;
   animation:  titledis 2s;
 
 }
@@ -178,8 +178,8 @@ body{
 .titledisplay{
   font-size: 20px;
   position: relative;
-  top:20px;
-  left:25%;
+  top:50px;
+  left:39%;
 }
 
 

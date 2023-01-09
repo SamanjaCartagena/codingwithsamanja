@@ -107,15 +107,7 @@ export default {
            title:'Recursion in Java',
           video:'https://www.youtube.com/embed/JFvUWv7C5o8'
         },
-        {
-          id:14,
-          title:'Make a simple counter Using Vue JS and Vuex',
-          video:'https://www.youtube.com/embed/W1gcmEaRSJI'
-        }, {
-            id:15,
-            title:'Date Picker Using Element Plus and Vue JS',
-            video:'https://www.youtube.com/embed/yM6Y1_XxOkQ'
-        }
+       
 
       ]
 
@@ -141,7 +133,9 @@ export default {
   bottom:20px;
 width:100%;
 
-background-color: #0a0a22;
+background-image: url('../assets/back.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
   height:700px;
   width: 100%;;
   
