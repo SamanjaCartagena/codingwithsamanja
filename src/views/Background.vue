@@ -98,11 +98,7 @@ export default {
           title:'Create a web server using JavaScript',
           video:'https://www.youtube.com/embed/S5BvIFWEzUk'
         },
-         {
-           id:13,
-           title:'Recursion in Java',
-          video:'https://www.youtube.com/embed/JFvUWv7C5o8'
-        },
+         
        
 
       ]
