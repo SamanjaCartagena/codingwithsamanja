@@ -57,7 +57,16 @@ export default {
           title:'Leetcode No.7 Reverse Integer ',
           video:'https://www.youtube.com/embed/3d5KYHW0l2E'
         },
- 
+         {
+          id:5,
+          title:'Leetcode No.33 Rotating Sorted Array',
+          video:'https://www.youtube.com/embed/G4ZuZDNv9Rk'
+        },
+         {
+          id:6,
+          title:'Leetcode No.217 Containing Duplicates',
+          video:'https://www.youtube.com/embed/N7KJFvgOfm0'
+        },
       ]
 
     }
