@@ -67,6 +67,16 @@ export default {
           title:'Leetcode No.217 Containing Duplicates',
           video:'https://www.youtube.com/embed/N7KJFvgOfm0'
         },
+        {
+          id:7,
+          title:'Leetcode No.442 Finding duplicates in an array',
+          video:'https://www.youtube.com/embed/MM29ZuRyIhc'
+        },
+        {
+          id:8,
+          title:'Leetcode No.27 Remove Element',
+          video:'https://www.youtube.com/embed/a9pZgVOTqsU'
+        },
       ]
 
     }
