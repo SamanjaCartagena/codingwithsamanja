@@ -77,6 +77,12 @@ export default {
           title:'Leetcode No.27 Remove Element',
           video:'https://www.youtube.com/embed/a9pZgVOTqsU'
         },
+        {
+          id:9,
+          title:'Leetcode No.22 Generate Parentheses',
+          video:'https://www.youtube.com/embed/0UER0gKjTRQ'
+        },
+        
       ]
 
     }
