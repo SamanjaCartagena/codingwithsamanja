@@ -82,6 +82,11 @@ export default {
           title:'Leetcode No.22 Generate Parentheses',
           video:'https://www.youtube.com/embed/0UER0gKjTRQ'
         },
+        {
+          id:10,
+          title:'First Unique Character in a String',
+          video:'https://www.youtube.com/embed/9WDimbWD0GY'
+        }
         
       ]
 
