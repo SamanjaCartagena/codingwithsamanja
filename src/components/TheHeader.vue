@@ -59,7 +59,7 @@ import bracket2 from '../assets/bracket2.jpg';
 export default {
     data(){
         return{
-            navItems:['Home','Books', 'Leetcode','Frontend','Backend','Data Structures','AboutMe',],
+            navItems:['Home','Books', 'Leetcode','Frontend','Backend','Full Stack','AboutMe',],
             socialIcons:[facebook,linkedin,twitter,youtube],
             frontend:['JavaScript','Vue Js','React Js'],
             backend:['Java', 'Google Cloud','RubyonRails'],
