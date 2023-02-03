@@ -16,5 +16,6 @@ import TheFooter from './components/TheFooter.vue'
 body{
   margin:0;
   padding:0;
+  background-color: #702a63;
 }
 </style>
