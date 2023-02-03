@@ -25,7 +25,18 @@
 <iframe width="400" height="300" :src="video.video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
+  <div class="displayWork">
+    <div class="work1">
+    </div>
+    <div class="work2">
 
+    </div>
+    <div class="work3">
+    </div>
+    <div class="work4">
+
+    </div>
+  </div>
   </div>
 </template>
 
@@ -124,7 +135,7 @@ computed:{
 body {
     background-color: #702a63;
 
-  height: 100%;
+  height: 5000px;
   font-family: 'tradegothiclt-bold', sans-serif;
 }
 .nav{
@@ -159,6 +170,46 @@ li:hover{
   position: absolute;
   top:37%;
   left:54%;
+}
+ .displayWork{
+  display: grid;
+  grid-auto-columns: auto;
+ }
+.work1{
+   height:150px;
+   width:50%;
+   background-color: #d0b8a3;
+   position: absolute;
+   top:80%;
+   left:50%;
+   
+}
+.work2{
+   height:150px;
+   width:50%;
+   background-color: #d0b8a3;
+   position: absolute;
+   top:85%;
+   left:0%;
+   
+}
+.work3{
+   height:150px;
+   width:50%;
+   background-color: red;
+   position: absolute;
+   top:100%;
+   left:50%;
+   
+}
+.work4{
+   height:150px;
+   width:50%;
+   background-color: #d0b8a3;
+   position: absolute;
+   top:110%;
+   left:0%;
+   
 }
 .searchBar{
   position:absolute;

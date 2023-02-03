@@ -8,7 +8,6 @@ import TheFooter from './components/TheFooter.vue'
        <the-header></the-header>
         
    <router-view/>
-   <the-footer></the-footer>
   </div>
 </template>
 
@@ -17,5 +16,6 @@ body{
   margin:0;
   padding:0;
   background-color: #702a63;
+  height: 5000px;
 }
 </style>
